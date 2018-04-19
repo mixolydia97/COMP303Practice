@@ -5,6 +5,7 @@ public abstract class DessertTopping implements Dessert {
 	protected Dessert dessert;
 	protected double toppingPrice;
 	protected int toppingCalories;
+	protected String name;
 	
 	public DessertTopping(Dessert dessert) {
 		this.dessert = dessert;
@@ -21,8 +22,11 @@ public abstract class DessertTopping implements Dessert {
 	}
 
 	public int getCalories() {
-		// TODO Auto-generated method stub
 		return dessert.getCalories() + toppingCalories;
+	}
+	
+	public String getName() {
+		return name;
 	}
 
 }

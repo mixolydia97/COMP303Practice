@@ -9,5 +9,6 @@ public class Sprinkles extends DessertTopping {
 	public Sprinkles(Dessert dessert) {
 		super(dessert);
 		setCost(0.5f);
+		this.name = "sprinkles";
 	}
 }

@@ -10,6 +10,6 @@ public class ChocolateIceCream extends IceCream {
 		this.costPerScoop = 1f;
 		this.caloriesPerScoop = 100;
 		this.scoops = scoops;
+		this.name = "chocolate";
 	}
-
 }

@@ -14,4 +14,6 @@ public interface Dessert {
 	
 	public int getCalories();
 	
+	public String getName();
+	
 }

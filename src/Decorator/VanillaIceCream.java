@@ -10,6 +10,6 @@ public class VanillaIceCream extends IceCream {
 		this.costPerScoop = 0.85f;
 		this.caloriesPerScoop = 90;
 		this.scoops = scoops;
+		this.name = "vanilla";
 	}
-
 }

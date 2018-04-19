@@ -9,7 +9,7 @@ public abstract class IceCream implements Dessert {
 	protected double costPerScoop;
 	protected int caloriesPerScoop;
 	protected int scoops;
-	
+	protected String name;
 	
 
 	public double getCost() {
@@ -25,5 +25,8 @@ public abstract class IceCream implements Dessert {
 	public int getCalories() {
 		return caloriesPerScoop * scoops;
 	}
-
+	
+	public String getName() {
+		return name;
+	}
 }
