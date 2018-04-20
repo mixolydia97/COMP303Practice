@@ -22,9 +22,9 @@ public class ClassReader
 	 */
 	public static void main(String[] args) 
 	{
-		Class<Count> countClass = Count.class;
+		Class<?> source = Count.class;
 		
-		dumpClass(countClass);
+		dumpClass(source);
 	}
 
 	/**
@@ -105,9 +105,9 @@ public class ClassReader
 		for(Field field : fields) 
 		{
 			System.out.format("    %s %s %s;\n", 
-								Modifier.toString(field.getModifiers()),
-								((Class<?>) field.getGenericType()).getSimpleName(),
-								field.getName());
+							Modifier.toString(field.getModifiers()),
+							((Class<?>) field.getGenericType()).getSimpleName(),
+							field.getName());
 		}
 	}
 
