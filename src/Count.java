@@ -26,6 +26,7 @@ public class Count implements Runnable {
 			second.join();
 			third.join();
 		} catch (InterruptedException e) {
+			//what should we do here?
 			e.printStackTrace();
 		} finally {
 			results();
@@ -56,6 +57,12 @@ public class Count implements Runnable {
 		
 		do {
 			lock.lock();
+			
+			/**
+			 * This seems like a Java idiom because of InterruptExceptions.
+			 * We want to make sure that if an exception happens, we'll 
+			 * still unlock the lock.
+			 */
 			try {
 				action(programID);
 				sum = one + two + three;
