@@ -31,8 +31,6 @@ public class Count implements Runnable {
 		} finally {
 			results();
 		}
-		
-		
 	}
 
 	public static void action(int programID) {
