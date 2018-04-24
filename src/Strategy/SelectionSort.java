@@ -3,7 +3,7 @@ package Strategy;
 public class SelectionSort extends SortingAlgorithm {
 
 	@Override
-	public Comparable[] sort(Comparable[] list) {
+	public <T extends Comparable<T>> T[] sort(T[] list) {
 		int minIndex;
 		
 		for(int i = 0; i < list.length; i++) {

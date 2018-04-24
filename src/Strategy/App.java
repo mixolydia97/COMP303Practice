@@ -6,8 +6,8 @@ import java.util.Arrays;
 public class App {
 
 	public static void main(String[] args) {
-		Comparable[] list = {5, 4, 6, 3, 90, 1};
-		Comparable[] sortedList;
+		Integer[] list = {5, 4, 6, 3, 90, 1};
+		Integer[] sortedList;
 		ArrayList<SortingAlgorithm> algorithms = new ArrayList<SortingAlgorithm>();
 		
 		algorithms.add(new SelectionSort());
